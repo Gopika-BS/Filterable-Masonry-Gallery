@@ -1,56 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+h2 {
+  font-size: 2.3rem;
+  color: #f4459a;
+  padding: 70px 0 40px;
+}
+.menu {
+  margin: 1.2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.menu a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  /* margin: 0 1.5rem; */
+  background-color: #753cf8;
+  color: #fff;
+  padding: 8px 22px;
+}
+.menu a.active {
+  background-color: #000;
+  border: 1px solid #753cf8;
+  color: #753cf8;
+}
+body {
+  background-color: #000;
+  font: 1.1em Arial, Helvetica, sans-serif;
+  /* transition: all 400ms ease-in-out; */
+}
 
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+figure img {
+  width: 100%;
+  display: block;
+  max-height: 400px;
+  object-fit: cover;
+  /* transform: scale(0.95); */
+  transition: transform 400ms ease-in-out;
+}
+figure img:hover {
+  transform: scale(1.1);
+}
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 0px;
+  break-inside: avoid;
+  overflow: hidden;
+  position: relative;
+}
+figure:not(.lazy-img):hover::after {
+  content: "View";
+  position: absolute;
+  /* inset: 50% 0 0 50%; */
+  inset: 0;
+  background-color: #000000aa;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  pointer-events: none;
+}
+figure:not(.lazy-img):hover::before {
+  content: "\f06e";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  left: 50%;
+  top: 50%;
+  transform: translate(calc(50% - 45px), -50%);
+  color: #fff;
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 5;
+}
+figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+.lazy-img {
+  border: 1px solid white;
+  outline: 2px solid black;
+}
+
+figure a {
+  color: black;
+  text-decoration: none;
+}
+
+/* figcaption {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em 0.5em;
+  justify-self: start;
+} */
+
+.container {
+  /* column-count: 4; */
+  column-gap: 0px;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+.modal {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  background-color: #000e;
+  display: none;
+}
+.modal.show {
+  display: block;
+}
+.modal-img {
+  position: absolute;
+  max-width: 100%;
+  inset: auto;
+  height: 80vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    column-count: 2;
   }
-  body{
-    font-family:'poppins',sans-serif;
-    width: 100%;
-    height: 100vh;
-    background: #f6fbfd;
-    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    column-count: 2;
   }
-  .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 4rem auto;
-    width: 90%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    column-count: 3;
   }
-  h2{
-    font-size: 2.3rem;
-    color: #F4459A;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    column-count: 4;
   }
-  .menu{
-    margin: 1.2rem 0;
-  }
-  .menu a{
-    font-size: 1.1rem;
-    text-decoration: none;
-    margin: 0 1.5rem;
-    background-color: #753CF8;
-    color: #fff;
-    padding: 8px 22px;
-  }
-  .box{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .store-items{
-    width: 300px;
-    padding: 1rem;
-  }
-  .store-items img{
-    width: 100%;
-    display: block;
-    box-shadow: 7px 7px 20px rgb(0, 0,0.2);
-  }
+}

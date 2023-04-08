@@ -1,54 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filterable Gallery</title>
     <script src="script.js" defer></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h2>Filterable Gallery</h2>
-        <div class="menu">
-            <a href="#" class="btn" data-filter="all">All</a>
-            <a href="#" class="btn" data-filter="logo">Logo Design</a>
-            <a href="#" class="btn" data-filter="web">Web Design</a>
-            <a href="#" class="btn" data-filter="mobile">Mobile Apps</a>
-        </div>
-        <div class="box" id="store-items">
-            <div class="store-items logo">
-                <img src="./image/images.jpg" class="store-img" alt="">
-            </div>
-            <div class="store-items web">
-                <img src="./image/web-1.jpg" class="store-img" alt="">
-            </div>
-            <div class="store-items mobile">
-                <img src="./image/mob-1.jpg" class="store-img" alt="">
-            </div>
-
-            <div class="store-items logo">
-                <img src="./image/logo-2.jpg" class="store-img" alt="">
-            </div>
-            <div class="store-items web">
-                <img src="./image/web-2.jpg" class="store-img" alt="">
-            </div>
-            <div class="store-items mobile">
-                <img src="./image/mob-2.jpg" class="store-img" alt="">
-            </div>
-
-            <div class="store-items logo">
-                <img src="./image/logo-3.jpg" class="store-img" alt="">
-            </div>
-            <div class="store-items web">
-                <img src="./image/web-3.jpg" class="store-img" alt="">
-            </div>
-            <div class="store-items mobile">
-                <img src="./image/mob-.jpg" class="store-img" alt="">
-            </div>
-        </div>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="text-center">
+      <h2>Filterable Gallery</h2>
+      <div class="menu">
+        <a href="#" class="btn active" data-filter="all">All</a>
+        <a href="#" class="btn" data-filter="wild">Wild Animals</a>
+        <a href="#" class="btn" data-filter="domestic">Domestic Animals</a>
+        <a href="#" class="btn" data-filter="bird">Birds</a>
+        <a href="#" class="btn" data-filter="sea">Sea Creatures</a>
+      </div>
+      HTML CSS Result Skip Results Iframe EDIT ON
     </div>
-</body>
+    <div class="container" id="store-items">
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/xWQcud4Xtr4" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/1xetOxStk_Y" />
+      </figure>
+
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/H3kArm8dOgI" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/0U1TsyC7RZE" />
+      </figure>
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/RYCiLJBEcos" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/iUA1cea8QiY" />
+      </figure>
+
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/6yPzo6rjNgU" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/uTwmyuQAIcg" />
+      </figure>
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/V0irYWO6uZ0" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/BvSOxut6w6o" />
+      </figure>
+
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/EAJ1L4ZjrB4" />
+      </figure>
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/DZ3ixpNPt7c" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/TlhrinkHoB4" />
+      </figure>
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/-mxLJ9kua_8" />
+      </figure>
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/0TPAlZ87mzk" />
+      </figure>
+
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/vUNQaTtZeOo" />
+      </figure>
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/fZu1iB6QxyQ" />
+      </figure>
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/JXXRYrK2kGU" />
+      </figure>
+
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/nI3bUW1Xqik" />
+      </figure>
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/AyrVL1W0OLo" />
+      </figure>
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/u5K46PukKAo" />
+      </figure>
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/3lGi0BXJ1W0" />
+      </figure>
+
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/N5ByCirHVqw" />
+      </figure>
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/aeNg4YA41P8" />
+      </figure>
+
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/OlKkCmToXEs" />
+      </figure>
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/fG1fdervp1E" />
+      </figure>
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/cfIcTiopin4" />
+      </figure>
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/JdNixbsLwS8" />
+      </figure>
+
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/rB8qv3rOIqA" />
+      </figure>
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/o3r7oVPZnZI" />
+      </figure>
+
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/ZtJ55pSpVTw" />
+      </figure>
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/5fhcbkOPhwA" />
+      </figure>
+
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/OmJTKK8v6bI" />
+      </figure>
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/TcN2ucbpBQg" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/sAGXVK6bNFc" />
+      </figure>
+
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/ic-13C3QhAI" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/UopR2NUBYek" />
+      </figure>
+
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/lylCw4zcA7I" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/3dBt-gVa91w" />
+      </figure>
+
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/wTPp323zAEw" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/pHztxoXCvAw" />
+      </figure>
+
+      <figure class="store-items bird">
+        <img src="https://source.unsplash.com/TBf7nD07dfc" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/RgKsNlZJH8s" />
+      </figure>
+
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/XvdEQxEjJyo" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/A-IsjKpPXCE" />
+      </figure>
+
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/rEM3cK8F1pk" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/TehDdCo12uA" />
+      </figure>
+
+      <figure class="store-items sea">
+        <img src="https://source.unsplash.com/wXt0DiISf38" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/mEdKuPYJe1I" />
+      </figure>
+
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/c-6GlGUbNrk" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/IDO_a-dxrCY" />
+      </figure>
+
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/Q-GR4CaJ8F4" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/rTEt2xxdOvI" />
+      </figure>
+
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/ZhF-9SKetvs" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/RwyPpzbJuck" />
+      </figure>
+
+      <figure class="store-items domestic">
+        <img src="https://source.unsplash.com/v1ydBEDxyQ0" />
+      </figure>
+      <figure class="store-items wild">
+        <img src="https://source.unsplash.com/98FC6SYw8ls" />
+      </figure>
+    </div>
+  </body>
+  <div class="modal" id="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-img" id="modalImage" src="" alt="" />
+  </div>
 </html>
